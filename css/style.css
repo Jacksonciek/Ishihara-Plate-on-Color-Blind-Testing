@@ -1,0 +1,240 @@
+/* Reset all margins and padding */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	display: flex;
+	flex-direction: column; /* Stack header, container, and footer */
+	height: 100vh; /* Full viewport height */
+	margin: 0;
+    padding: 0;
+	overflow-x: hidden;
+}
+
+/* Header styles */
+.header {
+	background-color: #0f2e3d;
+	color: white;
+	padding: 20px 0;
+	text-align: center;
+	display: flex; /* Use flexbox for layout */
+	align-items: center; /* Center items vertically */
+	justify-content: space-between; /* Space between logo and nav */
+}
+
+.navigation {
+	text-align: right;
+	padding: 10px 20px;
+}
+
+.navigation a {
+	color: white;
+	font-size: 1.2em;
+	margin: 0 30px;
+	text-decoration: none;
+}
+
+.logo {
+	width: 70px; 
+	margin-left: 30px; 
+}
+
+/* Main container */
+.container {
+	flex: 1; 
+	display: flex;
+	flex-direction: column; 
+	justify-content: center; 
+	align-items: center; 
+	text-align: center; /* Center all the content in the container */
+}
+
+/* Main title and subtitle styling */
+h1 {
+	font-family: 'Roboto', sans-serif; /* Font for SIMPLE */
+	font-size: 2.5em;
+	font-weight: 700;
+	text-align: center;
+}
+
+.main-title {
+	font-family: 'Oswald', sans-serif; /* Font for COLOR BLIND TEST */
+	font-size: 4em;
+	font-weight: bold;
+	letter-spacing: 4px;
+	text-align: center;
+}
+
+.subtitle {
+	font-family: 'Open Sans', sans-serif; /* Font for the paragraph */
+	font-size: 1.2em;
+	font-weight: normal;
+	margin-top: 10px;
+	max-width: 800px; /* Limit the width for better readability */
+	text-align: center; /* Center the paragraph */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Test button container */
+.test-button-container {
+    background-color: #0C2131; /* Dark blue background */
+	padding: 20px 10px;
+    width: 100vw; /* Ensure the background covers full viewport width */
+    position: relative; /* Make it relative to the viewport */
+    left: 0; /* Align to the left edge */
+    margin: 0; /* Remove any default margin */
+    text-align: center; /* Center align the content */
+}
+
+/* Title above the test buttons */
+.test-title {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 20px; /* Space between title and buttons */
+}
+
+/* Flexbox for the test buttons */
+.test-buttons {
+    display: flex;
+    justify-content: space-around; /* Spread the buttons evenly */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    padding: 0 10px; /* Slight padding on the sides */
+}
+
+/* Style for each button */
+.test-buttons a {
+    display: inline-block;
+    flex-grow: 1; /* Allows the buttons to grow evenly */
+    flex-basis: 20%; /* Set a minimum width for the buttons */
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid white; /* White border for contrast */
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif; /* Font for button text */
+    color: black; /* Button text color */
+    background-color: white; /* White background */
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for buttons */
+.test-buttons a:hover {
+    background-color: lightgray; /* Change background color on hover */
+}
+
+/* Footer styling */
+.footer {
+	background-color: #03111C;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	width: 100vw; /* Ensure the footer covers full width */
+	margin: 0;
+}
+
+.footer p {
+	font-family: 'Roboto', sans-serif; /* Different font for footer text */
+	font-size: 1.1em;
+	margin: 5px;
+}
+
+.footer p.names {
+	font-family: 'Oswald', sans-serif; /* Bold font for names */
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+/* Ensure no white space around the footer */
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+/* .table{
+	border-collapse: collapse;
+    border-spacing: 0;
+	color: #333; 
+	font-family: Helvetica, Arial, sans-serif; 
+	width:100%;
+	height:100%;
+	margin:0px;padding:0px;
+}
+td, th{
+	border: 1px solid #CCC;
+	height: 30px; 	
+	transition: all 0.3s;  
+}
+th {
+	background: #DFDFDF;
+
+	text-align: center;	
+	font-weight: bold;
+}
+td {
+	background: #FAFAFA;
+	text-align: center;
+}
+tr:nth-child(even) td { background: #F1F1F1; }   
+
+
+tr:nth-child(odd) td { background: #FEFEFE; }  
+
+tr td:hover { background: #666; color: #FFF; }
+
+body {
+	margin: 0 auto;
+	text-align: center;
+}
+.top-buffer { margin-top:20px; }
+
+h2 {
+	font-weight: normal;
+	font-size: 18px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+button {
+	font-size: 18px;
+	cursor: pointer;
+}
+
+
+.container {
+	text-align: left;
+	width: 100%;
+	 height:100%;
+	margin: 0 auto;
+}
+
+#options {
+	margin: 10px 0;
+}
+
+.next-question {
+	margin-right: 10px;
+}
+
+#score {
+	margin-top: 10px;
+	font-size: 18px;
+	font-weight: bold;
+} */

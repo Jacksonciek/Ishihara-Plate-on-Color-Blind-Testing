@@ -1,0 +1,96 @@
+<div class="test-area col-xs-12" ng-show="inProgress"></div>
+	<div ng-show="!testOver">
+		<div class="row " id="image">
+			<canvas class="col-xs-12" id="STAGE" width="440" height="440"></canvas>
+		</div>
+		<div class="question row text-center">What did you see</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<ul id="options">
+						<input type="text"  id="f" name="answer" style="width:100%" autofocus/>
+					</li>
+				</ul>
+			</div>
+			</div>
+		<div class="row">
+			<div class="col-xs-12 text-center">
+					<button id="submit_button" ng-click="checkAnswer()" class="btn btn-primary ">Submit</button>
+				
+			</div>
+			<div class="col-xs-12 text-center">
+					{{many}}/{{problem}}
+			</div>
+		</div>
+			
+		
+		<div style="height: 20px;">
+		</div>
+	</div>
+ 
+	<div ng-show="testOver">
+		<h2 class="col-xs-12 text-center">Test is over</h2>
+		<div class="row">
+			<div class="col-xs-2"></div>
+			<div class="col-xs-8 text-center">
+				<div class="row">
+					<button class="btn btn-success  " ng-click="reset()">Re-do Test again</button>
+				</div>
+				<div class="row" style="margin-top:10px; margin-bottom:10px ">
+					<table class="col-xs-12">
+						<tr>
+							<th class="text-center"> Correct Answer </th>
+							<th class="text-center"> Real Answer </th>
+							<th class="text-center"> Status </th>
+						</tr>
+						<tr ng-repeat="x in result">
+							<td>{{x.cor_ans}}</td>
+							<td>{{x.usr_ans}}</td>
+							<td>{{x.status}}</td>
+						</tr>
+						<tr>
+							<td> Final Result </td>
+							<td> </td>
+							<td> {{score}}% </td>
+						</tr>
+					</table>
+				</div>
+				<div class="row">
+					<a href="https://docs.google.com/forms/d/1N5epabY2B2Swfx9rF0CGpqut-pWu18IkDOm1eJ6vtKo/viewform" class="btn btn-success" >Submit your response</a>
+				</div>
+			</div>
+			<div class="col-xs-2 text-center "></div>
+	
+		</div>
+	</div>
+ 
+	
+</div>
+ 
+<div class="intro" ng-show="!inProgress" >
+	
+	<div class="col-xs-12" style="margin:33% 0px">
+		<div class="col-xs-12 text-center"><p>Welcome to the Color Blind Test App</p></div>
+		<div class="row top-buffer" >
+			<div class="col-xs-2" style="height:10px">
+		</div>
+        <button id="starTest" ng-click="$state.go('test', {bundle_id: 0})" class="btn btn-success text-center col-xs-8">Start Standard Test</button>
+			<div class="col-xs-2" style="height:10px"></div>
+		</div>
+		<div class="row top-buffer">
+			<div class="col-xs-2"  style="height:10px">
+		</div>
+        <button id="starTest" ng-click="$state.go('test', {bundle_id: 1})" class="btn btn-success text-center col-xs-8">Start Protanopia Test</button>
+			<div class="col-xs-2"  style="height:10px"></div>
+		</div>
+		<div class="row top-buffer">
+			<div class="col-xs-2"  style="height:10px"></div>
+			<button id="starTest" ng-click="$state.go('test', {bundle_id: 2})" class="btn btn-success text-center col-xs-8">Start Deuteranopia Test</button>
+			<div class="col-xs-2"  style="height:10px"></div>
+		</div>
+		<div class="row top-buffer">
+			<div class="col-xs-2"  style="height:10px"></div>
+			<button id="starTest" ng-click="$state.go('test', {bundle_id: 0})" class="btn btn-success text-center col-xs-8">Start Tritanopia Test</button>
+			<div class="col-xs-2"  style="height:10px"></div>
+		</div>
+	</div>
+</div>

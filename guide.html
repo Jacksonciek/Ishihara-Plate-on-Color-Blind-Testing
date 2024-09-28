@@ -1,0 +1,88 @@
+<div class="guide-content">
+    <h1>RULES AND QUIDE</h1>
+    <h2 class="main-title">COLOR BLIND TEST</h2>
+    <h2>Instructions on how to use the test:</h2>
+    <ol>
+        <li>This test is divided into 4 types:</li>
+        <ul>
+            <li><b>Standard Test:</b> 24 questions</li>
+            <li><b>Protanopia Test:</b> Red color blindness (10 questions)</li>
+            <li><b>Deuteranopia Test:</b> Red-green color blindness (10 questions)</li>
+            <li><b>Tritanopia Test:</b> Blue-yellow color blindness (10 questions)</li>
+        </ul>
+        <li>Each test question (image) will only appear for 5 seconds.</li>
+        <li>You can leave the answer blank (click Next) if you cannot find the answer.</li>
+        <br>
+        <li>Attention</li>
+        <li>For accurate results, please complete this test honestly. Do not seek help from others or modify the scripts of this website.</li>
+    </ol>
+    <div class="test-button-container">
+        <h3 class="test-title">Try one of our tests now!</h3>
+        <div class="test-buttons">
+            <a href="#" ng-click="openStandardTest()">STANDARD TEST</a>
+            <a href="#" ng-click="openProtanopiaTest()">PROTANOPIA TEST</a>
+            <a href="#" ng-click="openDeuteranopiaTest()">DEUTERANOPIA TEST</a>
+            <a href="#" ng-click="openTritanopiaTest()">TRITANOPIA TEST</a>
+        </div>
+    </div>    
+</div>
+
+
+<!-- <div class="test-area col-xs-12" ng-show="inProgress">
+    <div ng-show="!testOver">
+        <div class="row " id="image">
+            <canvas class="col-xs-12" id="STAGE" width="440" height="440"></canvas>
+        </div>
+        <div class="question row text-center">What did you see?</div>
+        <div class="row">
+            <div class="col-xs-12">
+                <ul id="options">
+                    <input type="text" id="f" name="answer" style="width:100%" autofocus/>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <button id="submit_button" ng-click="checkAnswer()" class="btn btn-primary">Submit</button>
+            </div>
+            <div class="col-xs-12 text-center">
+                {{many}}/{{problem}}
+            </div>
+        </div>
+    </div>
+
+    <div ng-show="testOver">
+        <h2 class="col-xs-12 text-center">Test is over</h2>
+        <div class="row">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-8 text-center">
+                <div class="row">
+                    <button class="btn btn-success" ng-click="reset()">Re-do Test again</button>
+                </div>
+                <div class="row" style="margin-top:10px; margin-bottom:10px ">
+                    <table class="col-xs-12">
+                        <tr>
+                            <th class="text-center">Correct Answer</th>
+                            <th class="text-center">Real Answer</th>
+                            <th class="text-center">Status</th>
+                        </tr>
+                        <tr ng-repeat="x in result">
+                            <td>{{x.cor_ans}}</td>
+                            <td>{{x.usr_ans}}</td>
+                            <td>{{x.status}}</td>
+                        </tr>
+                        <tr>
+                            <td>Final Result</td>
+                            <td></td>
+                            <td>{{score}}%</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="row">
+                    <a href="https://docs.google.com/forms/d/1N5epabY2B2Swfx9rF0CGpqut-pWu18IkDOm1eJ6vtKo/viewform" class="btn btn-success">Submit your response</a>
+                </div>
+            </div>
+            <div class="col-xs-2 text-center"></div>
+        </div>
+    </div>
+</div> -->
